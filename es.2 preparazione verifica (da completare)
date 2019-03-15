@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package problema2;
+
+/**
+ *
+ * @author nicolo.voltarel
+ */
+public class Problema2 {
+
+	/**
+	 * @param args the command line arguments
+	 */
+	public static void main(String[] args) {
+		char [] x = {'c', 'i', 'a', 'o'};
+		if(minuscola(x) == true)
+		    System.out.println("E' minuscola");
+		else
+			System.out.println("Non è minuscola");
+	}
+	
+	//Ricorsione da fare
+	public static boolean minuscola (char[] x){
+		if (x.length < 1)
+			return true;
+		if (x.length == 1){
+		    if('a' <= x[0] && x[0] <= 'z' )
+				return true;
+			if(('a' <= x[0] && x[0] <= 'z' ) && ('a' <= x[x.length-1] && x[x.length-1] <= 'z' ))
+		return true;
+		}
+	}
